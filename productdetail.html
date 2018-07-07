@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+   <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/productdetail.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+   
+  
+
+</head>
+<body>
+    <div class="m_container">
+        <!-- 网站头部 -->
+        <div class="m_header">
+            <div class="m_logo">
+                <img src="./images/header_logo.png" alt="">
+            </div>
+            <div class="m_download">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+                
+            </div>
+            
+        
+        
+        </div>
+        <!--网站搜索 -->
+        <div class="m_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button class = "searchBtn">搜索</button>
+        </div>
+       <!-- 筛选导航 -->
+       <div class="m_sift mui-clearfix">
+          <!-- 挖个坑 -->
+         
+       </div>
+       <!-- 商品详情 -->
+       <div class="pro_detail">
+           <!-- 占个坑 -->
+        </div>  
+
+        <!-- 商品评价 -->
+        <div class="m_evaluate">
+            <div class="title">
+                <span>网友评价</span>
+            </div>
+            <ul class = "eva_info">
+               <!-- 占个坑 -->
+              
+            </ul>
+            <div class = "more">
+                <button>查看跟多评论</button>
+            </div>
+        </div>
+     
+        
+      
+    <!-- 底部信息 -->
+        
+        <div class="m_footer">
+       
+        <!-- 登录、注册 -->
+        <div class="m_login">
+            <ul class = "mui-clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class = "toTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    返回顶部</a></li>
+            </ul>
+        </div>
+        <p class = "m_addr">
+            <a href ="#" class = "app">手机APP下载</a>
+            <a href="#" class = "iphone">慢慢买手机版</a>
+            -- 掌上比价平台
+            
+        </p>
+        <p class = "m_url">m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+    <!-- 商品详情导航模板 -->
+   <script type = "text/html" id = "siftTmp">
+    
+    <div class="sift_nav mui-pull-left">
+            <a href="index.html">首页 ></a>
+            <a href="category.html">{{category}} ></a>
+            <a href="#">{{brandName}} ></a>
+        </div>
+        <div class="siftBtn mui-pull-right">
+            <a href = "#">筛选</a>
+        </div>
+    
+    </script>
+
+    <!-- 商品详细信息模板 -->
+   <script type = "text/html" id = "proTmp">
+  
+   <div class="product ">
+        <div class="pro_title">{{productName}}</div>
+        <div class="pro_photo">
+            {{#productImg}}
+        </div>
+        <div class = "pro_col mui-clearfix">
+            <img src="./images/sc.jpg" alt="" class = "mui-pull-right">
+        </div>
+    </div>
+    <div class="pro_info">
+        <ul class = "mui-clearfix">
+            <li><a href="#">比价购买</a></li>
+            <li><a href="#">产品参数</a></li>
+            <li><a href="#">评价（2322）</a></li>
+        </ul>
+    </div> 
+    {{#bjShop}}
+   <div class = "m_tip">
+        <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p> 
+    </div>
+  
+    </script>
+    <!-- 用户评价模板 -->
+    <script type = "text/html" id = "evaluateTmp">
+        {{each obj as v i}}
+        <li>
+                <div class = "user mui-clearfix">
+                    <span  class = "mui-pull-left">{{v.comName}}</span>
+                    <span class = " mui-pull-right">{{v.comTime}}</span>
+                </div>
+                <p class = "store">{{v.comFrom}}</p>
+                <p class = "text">
+                    {{v.comContent}}
+                </p>
+            </li>
+        {{/each}}
+    </script>
+   
+    <script src = "./lib/jquery/jquery.min.js"></script>
+    <script src = "./lib/artTemplate/template-web.js"></script>
+    <script src = "./lib/mui/js/mui.js"></script>
+   
+   <script src="./js/productdetail.js"></script>
+  
+</body>
+</html>

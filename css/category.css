@@ -1,0 +1,31 @@
+.m_list .list_title {
+  width: 100%;
+  line-height: 2rem;
+  background-color: #EDEDED;
+}
+.m_list .list_title li .m_title {
+  padding: 0 0.8rem;
+  border-bottom: 1px solid #C9C9C9;
+}
+.m_list .list_title li .m_title span {
+  font-size: 0.9rem;
+  color: #1A120C;
+  font-weight: bold;
+}
+.m_list .list_title li .m_title i {
+  float: right;
+}
+.m_list .list_title li:last-child .m_title {
+  border-bottom: none;
+}
+.m_list .list_title li .item .list_item {
+  float: left;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  line-height: 2rem;
+  width: 33.3%;
+  height: 2rem;
+  font-size: 0.8rem;
+  color: #343538;
+  background-color: #fff;
+}

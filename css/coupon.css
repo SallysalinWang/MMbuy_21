@@ -1,0 +1,29 @@
+.conpon_pro {
+  background-color: #fff;
+}
+.conpon_pro ul {
+  width: 100%;
+}
+.conpon_pro ul li {
+  width: 31%;
+  float: left;
+  border: 1px solid #F0F0F0;
+  margin: 0.25rem;
+  text-align: center;
+}
+.conpon_pro ul li a {
+  display: block;
+}
+.conpon_pro ul li a .img_box {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 0.5rem auto;
+}
+.conpon_pro ul li a .img_box img {
+  width: 100%;
+  height: 100%;
+}
+.conpon_pro ul li a .info {
+  font-size: 0.6rem;
+  color: #000;
+}

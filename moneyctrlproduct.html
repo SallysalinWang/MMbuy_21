@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+   <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/moneyctrlproduct.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+   
+  
+
+</head>
+<body>
+    <div class="m_container">
+        <!-- 网站头部 -->
+        <div class="m_header">
+                <div class="m_logo">
+                    <a href = "javascript:history.go(-1);" alt="">
+                        <i class = "mui-icon mui-icon-back"></i>
+                    </a>
+                </div>
+                <div class="m_title">
+                   国内折扣
+                </div>
+                <div class="m_download">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                    
+                </div>
+                
+            
+            
+            </div>
+       
+       <!-- 商品详情 -->
+       <div class="pro_detail">
+            <!-- 占个坑 -->
+        </div>  
+
+       
+        
+      
+    <!-- 底部信息 -->
+        
+        <div class="m_footer">
+       
+        <!-- 登录、注册 -->
+        <div class="m_login">
+            <ul class = "mui-clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class = "toTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    返回顶部</a></li>
+            </ul>
+        </div>
+        <p class = "m_addr">
+            <a href ="#" class = "app">手机APP下载</a>
+            <a href="#" class = "iphone">慢慢买手机版</a>
+            -- 掌上比价平台
+            
+        </p>
+        <p class = "m_url">m.manmanbuy.com</p>
+        </div>
+
+    </div>
+<!-- 整个页面产品信息模板 -->
+<script type = "text/html" id = "Tmp">
+    <div class="title">
+            {{productName}}
+        </div>
+        <div class="info">
+            <span class = "store">{{productFrom}}</span>
+            <span class = "date">{{productTime}}</span>
+            <span class = "user">{{productTips}}</span>
+        </div>
+        <div class="des mui-clearfix">
+            <div class="imgSm">
+                {{#productImgSm}}
+            </div>
+            <div class="text">
+                    <p class="info1">{{productInfo}}</p>
+                    <p class = "info2">
+                           {{productInfo2}}
+                    </p>
+            </div>
+           
+            
+        </div>
+        <div class="imgLg">
+            {{#productImg2}}
+        </div>
+        <div class="city">
+            {{#productCity}}
+        </div>
+        <div class="goBuy">
+            <a href="#">前往购买</a>
+        </div>
+        <div class="code">
+            <img src="./images/mweixin1.png" alt="">
+        </div>
+       {{#productComment}}
+</script>
+    <script src = "./lib/jquery/jquery.min.js"></script>
+    <script src = "./lib/artTemplate/template-web.js"></script>
+    <script src = "./lib/mui/js/mui.js"></script>
+   
+   <script src="./js/moneyctrlproduct.js"></script>
+  
+</body>
+</html>

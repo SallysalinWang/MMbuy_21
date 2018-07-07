@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+   <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet"type="text/css" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+
+</head>
+<body>
+    <div class="m_container">
+        <!-- 网站头部 -->
+        <div class="m_header">
+            <div class="m_logo">
+                <img src="./images/header_logo.png" alt="">
+            </div>
+            <div class="m_download">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+                
+            </div>
+            
+        
+        
+        </div>
+        <!--网站搜索 -->
+        <div class="m_search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button class = "searchBtn">搜索</button>
+        </div>
+
+
+        <!-- 导航列表模块 -->
+        <div class="brand_shif">
+            <div class="brand_nav">
+                <a href="index.html">首页 ></a>
+                <a href="category.html">全部分类 ></a>
+                    
+            </div>
+        </div>
+       
+        <!-- 热门品牌排行标题 -->
+        <div class="rand">
+           平板电视哪个牌子好
+        
+        </div>
+
+        <!-- 品牌排行列表 -->
+        <div class="brand_list">
+            <ul class = "mui-clearfix list_title">
+                <!-- 占个坑 -->
+             </ul>
+        </div>
+
+        <!-- 品牌销量排行 -->
+        <div class="brand_rank">
+            <div class="title">
+                平板电视产品销售排行
+            </div>
+            <div class="brand_pro">
+                <ul>
+                   <!-- 占个坑 -->
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- 品牌最新评论 -->
+        <div class="comment">
+            <div class="title">
+                平板电视最新评论
+            </div>
+            <div class="detail">
+                <ul>
+                    <!-- 占个坑 -->
+                </ul>
+            </div>
+           
+        </div>
+    <!-- 底部信息 -->
+        
+        <div class="m_footer">
+        
+        <div class="m_login">
+            <ul class = "mui-clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class = "toTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    返回顶部</a></li>
+            </ul>
+        </div>
+        <p class = "m_addr">
+            <a href ="#" class = "app">手机APP下载</a>
+            <a href="#" class = "iphone">慢慢买手机版</a>
+            -- 掌上比价平台
+            
+        </p>
+        <p class = "m_url">m.manmanbuy.com</p>
+        </div>
+
+    </div>
+
+    <!-- 品牌比较排行模板 -->
+   <script type= "text/html" id = "brandTmp">
+        {{each result as v i}}
+            <li>
+                <a href="#" class = "mui-clearfix">
+                      <div class="left">
+                          <div class="img_box">
+                              {{v.categoryId}}
+                          </div>
+                      </div>
+                      <div class="info">
+                          <div class="brand_title"> {{v.brandName}}</div>
+                          <div class = "brand_info">{{v.brandInfo}}</div>
+                      </div>
+                      <i class = "mui-icon mui-icon-arrowright "></i>
+                  </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <!-- 品牌销售排行模板 -->
+    <script type = "text/html" id = "proTmp">
+        {{each result as v i}}
+        <li class = "mui-clearfix" data-id = "{{v.productId}}">
+                <a href="#">
+                   <div class="img_box">
+                        {{#v.productImg}}
+                   </div>
+                   <div class="info">
+                       <div class="info_top">
+                            {{v.productName}}
+                       </div>
+                       <div class="price">
+                           <span class = "fl">{{v.productPrice}}</span>
+                           <span class = "fr">
+                               <i class = "iconfont icon-star"></i>
+                               <i class = "iconfont icon-star"></i>
+                               <i class = "iconfont icon-star"></i>
+                               <i class = "iconfont icon-star"></i>
+                               <i class = "iconfont icon-star"></i>
+                           </span>
+                       </div>
+                       <div class="other">
+                           <span>{{v.productQuote}}</span>
+                           <span>{{v.productCom}}</span>
+                       </div>
+                   </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+
+    <!-- 品牌评论模板 -->
+    <script type = "text/html" id = "comTmp">
+        {{each result as v i}}
+            <li>
+                <div class="pro mui-clearfix" >
+                    <div class="img_box">
+                            <img src="./images/flower.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="info_top">
+                                乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="pro_comment">
+                    <div class="icon"></div>
+                    <div class="com_top">
+                        <span class="user">{{v.comName}}</span>
+                        <span class = "star">
+                            <i class = "iconfont icon-star"></i>
+                            <i class = "iconfont icon-star"></i>
+                            <i class = "iconfont icon-star"></i>
+                            <i class = "iconfont icon-star"></i>
+                            <i class = "iconfont icon-star"></i>
+                        </span>
+                        <span class = "date">{{v.comTime}}</span>
+            
+                    </div>
+                    <div class="com_text">
+                       {{v.comContent}}
+                    
+                    </div>
+                </div>
+            </li>
+        {{/each}}
+    </script>
+   
+    <script src = "./lib/jquery/jquery.min.js"></script>
+    <script src = "./lib/artTemplate/template-web.js"></script>
+    <script src = "./lib/mui/js/mui.js"></script>
+   <script src="./js/brand.js"></script>
+  
+</body>
+</html>

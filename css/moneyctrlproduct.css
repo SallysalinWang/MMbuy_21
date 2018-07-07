@@ -1,0 +1,154 @@
+.m_container .m_header {
+  padding-left: 2.75rem;
+}
+.m_container .m_header .m_logo {
+  width: 2.75rem;
+  top: 0.8rem;
+}
+.m_container .m_header .m_logo a {
+  color: #fff;
+}
+.m_container .m_header .m_title {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2.5rem;
+}
+.pro_detail {
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+}
+.pro_detail .title {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #303131;
+}
+.pro_detail .info {
+  font-size: 0.55rem;
+  color: #A8A2A3;
+  line-height: 2rem;
+}
+.pro_detail .info .date {
+  margin: 0 0.25rem;
+}
+.pro_detail .des .des_img {
+  width: 6.25rem;
+  height: 8rem;
+  float: right;
+}
+.pro_detail .des .des_img img {
+  width: 100%;
+  height: 100%;
+}
+.pro_detail .des .text p {
+  font-size: 0.6rem;
+  color: #7C7470;
+}
+.pro_detail #disstorck {
+  width: 6.75rem;
+  margin: 0 auto;
+  box-shadow: 0.05rem 0.05rem 0.1rem #EEE;
+  padding: 0.5rem;
+}
+.pro_detail #disstorck li {
+  height: 1.05rem;
+  line-height: 1.05rem;
+  border-bottom: 1px dashed #E0E0E0;
+  font-size: 0.55rem;
+  font-weight: bold;
+}
+.pro_detail #disstorck li a span {
+  color: #100D0E;
+}
+.pro_detail #disstorck li a span strong {
+  color: #F16E0B;
+  float: right;
+}
+.pro_detail .goBuy {
+  width: 16.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #FF9000;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.pro_detail .goBuy a {
+  color: #fff;
+}
+.pro_detail .code {
+  width: 17.5rem;
+  height: 7rem;
+  margin: 0 auto;
+  margin-top: 2.25rem;
+}
+.pro_detail .code img {
+  width: 100%;
+  height: 100%;
+}
+.pro_detail .cu-content-pl .tit {
+  font-size: 0.9rem;
+  color: #040207;
+  line-height: 2.75rem;
+}
+.pro_detail .cu-content-pl .reply .ctrl {
+  overflow: hidden;
+  background-color: #FBFBFB;
+  border-bottom: 1px solid #E6E3E1;
+}
+.pro_detail .cu-content-pl .reply .ctrl .tjdp {
+  width: 5rem;
+  height: 2rem;
+  float: right;
+  background-color: #FF841D;
+  color: #fff;
+  font-size: 0.8rem;
+  border: none;
+}
+.pro_detail .cu-content-pl #newcomment {
+  font-size: 1rem;
+  color: #000;
+}
+.pro_detail .cu-content-pl .list .ui-border-b {
+  overflow: hidden;
+  padding-top: 0.75rem;
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .userimg {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 0;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .userimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .con {
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .con .name {
+  overflow: hidden;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .con .name .username {
+  float: left;
+  font-size: 0.6rem;
+  color: #6996C0;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .con .name .time {
+  float: right;
+  font-size: 0.5rem;
+  color: #908D8C;
+}
+.pro_detail .cu-content-pl .list .ui-border-b .con .content {
+  font-size: 0.65rem;
+  color: #000;
+}

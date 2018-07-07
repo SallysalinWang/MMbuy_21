@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/commen.css">
+   <link rel="stylesheet" href="./css/gsproduct.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+   
+  
+
+</head>
+<body>
+    <div class="m_container">
+        <!-- 网站头部 -->
+        <div class="m_header">
+            <div class="m_logo">
+                <a href = "javascript:history.go(-1);" alt="">
+                    <i class = "mui-icon mui-icon-back"></i>
+                </a>
+            </div>
+            <div class="m_title">
+               凑单品
+            </div>
+            <div class="m_download">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+                    
+            </div>
+                
+            
+            
+        </div>
+       
+       <!-- 商品详情 -->
+        <div class="pro_title">
+            <ul class = "mui-clearfix">
+                <li>
+                    <a href="#">
+                        <span class = "title">京东</span>
+                        <i class = "iconfont icon-up"></i>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                    <span class = "title">华北</span>
+                    <i class = "iconfont icon-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class = "title">全部价格</span>
+                    <i class = "iconfont icon-up"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 店铺列表 -->
+        <div class="shop_list" style="display: none">
+            <ul>
+               <!-- 占个坑 -->
+               
+            </ul>
+        </div>
+
+        <!-- 地区列表 -->
+        <div class="area_list" style = "display:none">
+            <ul>
+                <!-- 占个坑 -->
+                
+            </ul>
+        </div>
+
+        <!-- 产品列表 -->
+        <div class="pro_list">
+            <ul class = "mui-clearfix">
+              <!-- 占个坑 -->
+                
+            </ul>
+        </div>
+
+       
+        
+      
+    <!-- 底部信息 -->
+        
+        <div class="m_footer">
+       
+        <!-- 登录、注册 -->
+        <div class="m_login">
+            <ul class = "mui-clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class = "toTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    返回顶部</a></li>
+            </ul>
+        </div>
+        <p class = "m_addr">
+            <a href ="#" class = "app">手机APP下载</a>
+            <a href="#" class = "iphone">慢慢买手机版</a>
+            -- 掌上比价平台
+            
+        </p>
+        <p class = "m_url">m.manmanbuy.com</p>
+        </div>
+
+    </div>
+    <!-- 店铺模板 -->
+    <script type = "text/html" id = "shopTmp">
+        {{each result as v i}}
+            <li data-id = "{{v.shopId}}">
+                <span>{{v.shopName}}</span>
+                <i class = "iconfont"></i>
+            </li>
+           
+        {{/each}}
+    </script>
+
+    <!-- 地区模板 -->
+    <script type = "text/html" id = "areaTmp">
+        {{each result as v i}}
+            <li data-id = "{{v.areaId}}">
+                <span>{{v.areaName}}</span>
+                <i class = "iconfont"></i>
+            </li>
+        {{/each}}
+    </script>
+
+    <!-- 商品列表模板 -->
+    <script type = "text/html" id = "listTmp">
+        {{each result as v i}}
+            <li>
+                        
+                <div class="img_box">
+                    <img src="{{v.productImg}}" alt="">
+                </div>
+                <div class="info mui-ellipsis">
+                    {{v.productName}}
+                </div>
+                <div class="price mui-clearfix">
+                    {{v.productPrice}}
+                    <a href="#" class = "gofree">去凑单</a>
+                </div>
+            
+            </li>
+        {{/each}}
+    </script>
+    <script src = "./lib/jquery/jquery.min.js"></script>
+    <script src = "./lib/artTemplate/template-web.js"></script>
+    <script src = "./lib/mui/js/mui.js"></script>
+    <script src = "./js/commen.js"></script>
+   <script src="./js/gsproduct.js"></script>
+  
+</body>
+</html>

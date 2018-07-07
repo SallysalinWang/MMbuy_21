@@ -1,0 +1,104 @@
+.m_nav {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.5rem;
+}
+.m_nav ul {
+  list-style: none;
+}
+.m_nav ul li {
+  float: left;
+  width: 25%;
+}
+.m_nav ul li a {
+  display: block;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+.m_nav ul li a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.m_nav ul li a p {
+  font-size: 0.6rem;
+  color: #1E1E1E;
+}
+.m_recommen {
+  width: 100%;
+  height: 1.75rem;
+  background-color: #FF9A18;
+  margin-top: 0.25rem;
+  padding: 0 0.5rem;
+  line-height: 1.75rem ;
+}
+.m_recommen p {
+  font-size: 0.8rem;
+  color: #fff;
+  float: left;
+  margin: 0;
+}
+.m_recommen a {
+  margin-top: 0.3rem;
+  float: right;
+}
+.m_recommen a img {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.m_product {
+  width: 100%;
+  background-color: #fff;
+}
+.m_product li {
+  height: 6.4rem;
+  border: 1px solid #E6E6E6;
+  padding-top: 0.7rem;
+  padding-right: 0.4rem;
+}
+.m_product li .pro_pic {
+  width: 5.375rem;
+  height: 5.375rem;
+}
+.m_product li .pro_pic img {
+  width: 100%;
+  height: 100%;
+}
+.m_product li .pro_info {
+  overflow: hidden;
+}
+.m_product li .pro_info span {
+  height: 1rem;
+  line-height: 1rem;
+}
+.m_product li .pro_info .des {
+  font-size: 0.8rem;
+  color: #303030;
+}
+.m_product li .pro_info .price {
+  font-size: 0.8rem;
+  color: #FF6C15;
+}
+.m_product li .pro_info .other {
+  margin-top: 1.75rem;
+}
+.m_product li .pro_info .other span {
+  font-size: 0.7rem;
+  color: #B3AAA3;
+}
+.m_product .m_free {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  width: 17.75rem;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  border-radius: 0.25rem;
+  border: 1px solid #DFDFDF;
+  background-color: #F8F8F8;
+  margin-top: 0.55rem;
+  font-size: 0.7rem;
+}
+.m_product .m_free a {
+  display: block;
+  color: #000;
+}

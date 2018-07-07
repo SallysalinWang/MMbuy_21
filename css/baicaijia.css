@@ -1,0 +1,122 @@
+.m_bcjnav {
+  position: relative;
+  background-color: #fff;
+}
+.m_bcjnav .iconfont {
+  font-size: 1rem;
+  color: #808080;
+  position: absolute;
+  top: 0.65rem;
+  right: 0;
+  z-index: 666;
+  background-color: #fff;
+}
+.m_bcjnav #wrapper {
+  width: 100%;
+}
+.m_bcjnav #wrapper ul .nav_item {
+  float: left;
+  padding: 0 0.7rem;
+  box-sizing: border-box;
+}
+.m_bcjnav #wrapper ul .nav_item a {
+  display: block;
+  line-height: 2rem;
+  color: #2F3939;
+  font-size: 0.5rem;
+}
+.m_bcjnav #wrapper ul .nav_item.current a {
+  color: #D90000;
+  border-bottom: 2px solid #D90000;
+}
+.m_bcjproduct li {
+  background-color: #fff;
+  margin-top: 0.25rem;
+  padding: 0.7rem 0.25rem;
+}
+.m_bcjproduct li .bcjImg {
+  width: 6rem;
+  height: 6rem;
+}
+.m_bcjproduct li .bcjImg img {
+  width: 100%;
+  height: 100%;
+}
+.m_bcjproduct li .baj_info {
+  overflow: hidden;
+  padding-left: 0.375rem;
+}
+.m_bcjproduct li .baj_info .bcj_title {
+  font-size: 0.5rem;
+  height: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+.m_bcjproduct li .baj_info .price {
+  font-size: 0.7rem;
+  color: #FB0529;
+}
+.m_bcjproduct li .baj_info .price em {
+  margin-right: 0.25rem;
+}
+.m_bcjproduct li .baj_info .price del {
+  font-size: 0.5rem;
+  color: #999;
+  margin-left: 0.375rem;
+}
+.m_bcjproduct li .baj_info .bar i {
+  display: block;
+  width: 4.15rem;
+  height: 0.6rem;
+  border: 1px solid #FC3A3F;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 0.5rem;
+  background-color: #FFB7B7;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.m_bcjproduct li .baj_info .bar i em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #FC353A;
+}
+.m_bcjproduct li .baj_info .bar i span {
+  position: absolute;
+  top: -0.05rem;
+  left: 1.5rem;
+}
+.m_bcjproduct li .baj_info .bar b {
+  padding-left: 0.5rem;
+  font-size: 0.6rem;
+  color: #FC3F39;
+}
+.m_bcjproduct li .baj_info .bcj_free {
+  float: left;
+  width: 5.5rem;
+  border: 1px dashed #F1999A;
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.m_bcjproduct li .baj_info .bcj_free a {
+  font-size: 0.5rem;
+  color: #E74F51;
+}
+.m_bcjproduct li .baj_info .link {
+  margin-top: 0.5rem;
+  float: right;
+  width: 2.8rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: #FF5E5D;
+  border-radius: 0.25rem;
+}
+.m_bcjproduct li .baj_info .link a {
+  font-size: 0.5rem;
+  color: #fff;
+}

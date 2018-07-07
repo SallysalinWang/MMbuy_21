@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+   <link rel="stylesheet" href="./css/commen.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+    <link rel="stylesheet"type="text/css" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+
+</head>
+<body>
+    <div class="m_container">
+        <!-- 网站头部 -->
+        <div class="m_header">
+            <div class="m_logo">
+                <a href = "javascript:history.go(-1);" alt="">
+                    <i class = "mui-icon mui-icon-back"></i>
+                </a>
+            </div>
+            <div class="m_title">
+               白菜价 - 淘宝内部券
+            </div>
+            <div class="m_download">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+                    
+            </div>
+                    
+                
+                
+        </div>
+       
+        <!-- 网站导航 -->
+        <div class="m_bcjnav ">
+           <div class="iconfont icon-caidan"></div>
+           <div id="wrapper">
+                <ul class = "mui-clearfix">
+                    <!-- 占个坑 -->
+                </ul>
+        </div>
+        </div>
+        <!-- 网站商品列表 -->
+        <div class="m_bcjproduct">
+            <ul>
+                <!-- 占个坑 -->
+                
+            </ul>
+           
+        
+        </div>
+    <!-- 底部信息 -->
+        
+        <div class="m_footer">
+       <!-- 登录，注册 -->
+        <div class="m_login">
+            <ul class = "mui-clearfix">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class = "toTop"><a href="#">
+                    <img src="./images/top.jpg" alt="">
+                    返回顶部</a></li>
+            </ul>
+        </div>
+        <p class = "m_addr">
+            <a href ="#" class = "app">手机APP下载</a>
+            <a href="#" class = "iphone">慢慢买手机版</a>
+            -- 掌上比价平台
+            
+        </p>
+        <p class = "m_url">m.manmanbuy.com</p>
+        </div>
+
+       
+
+    </div>
+    <!--   白菜价网页导航模板  -->
+    <script type = "text/html" id = "navTmp">
+        {{each result as v i}}
+            <li class = "nav_item {{i===0 ? "current" : ""}}" data-id="{{v.titleId}}"><a href="#" >{{v.title}}</a></li>
+        {{/each}}
+        
+    </script>
+    <script type = "text/html" id = "listTmp">
+        {{each result as v i}}
+        <li class = "mui-clearfix"><a href="#">
+                <div class="bcjImg mui-pull-left">
+                    {{#v.productImg}}
+
+                </div>
+                <div class="baj_info">
+                    <div class="bcj_title">
+                        {{#v.productName}}
+                    </div>
+                    <p class = "price">
+                       {{#v.productPrice}}
+                    </p>
+                    {{#v.productCouponRemain}}
+                    <div class="bcj_free">
+                        {{#v.productCoupon}}
+                    </div>
+                    <div class="link">
+                        {{#v.productHref}}
+                    </div>
+                </div>
+                
+            </a></li>
+        {{/each}}
+    </script>
+    
+    <script src = "./lib/jquery/jquery.min.js"></script>
+    <script src = "./lib/artTemplate/template-web.js"></script>
+    <script src = "./lib/iscroll/iscroll.js"></script>
+    <script src = "./lib/mui/js/mui.js"></script>
+    <script src = "./js/commen.js"></script>
+   <script src="./js/baicaijia.js"></script>
+  
+</body>
+</html>

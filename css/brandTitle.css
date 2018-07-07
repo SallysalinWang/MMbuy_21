@@ -1,0 +1,44 @@
+.m_container {
+  background-color: #fff;
+}
+.brand_shif {
+  line-height: 1.9rem;
+  padding: 0 0.5rem;
+  background-color: #F2F2F2;
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+}
+.brand_shif .brand_nav a {
+  font-size: 0.9rem;
+  color: #020204;
+}
+.rand {
+  line-height: 2rem;
+  margin: 0.5rem 0.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #C6C6C6;
+  background-color: #EEEEEE;
+  font-size: 0.7rem;
+  color: #863119;
+}
+.brand_list {
+  border-radius: 0.25rem;
+}
+.brand_list li {
+  line-height: 2rem;
+  background-color: #EDEDED;
+  border-bottom: 1px solid #CCC;
+  padding: 0.5rem;
+}
+.brand_list li a {
+  display: block;
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: bold;
+}
+.brand_list li a i {
+  float: right;
+  font-size: 0.7rem;
+  color: #A5A5A5;
+}
